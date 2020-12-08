@@ -1,0 +1,133 @@
+.gameArea{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:1200px;
+    height:600px;
+    border:2px solid black;
+    background-color: #555;
+}
+
+
+.dino{
+    position:absolute;
+    top:500px;
+    left:0px;
+    height: 100px;
+    width:50px; 
+    background-color: rgb(31, 5, 80);
+    /* animation: hopsa 0.5s linear infinite; */
+}
+
+.obstacle{
+    position:relative;
+    top:550px;
+    left:1150px;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    background-color: white;
+    animation: fly 1s linear infinite;
+}
+
+.obstacle2{
+    position:relative;
+    top:200px;
+    left:1150px;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    background-color: purple;
+    animation: fly 1s linear infinite;
+}
+
+.obstacle3{
+    position:relative;
+    top:350px;
+    left:1150px;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    background-color: rgb(16, 202, 16);
+    animation: fly 1s linear infinite;
+}
+
+.bgcUpgrade{
+    background-color: rgb(221, 190, 17);
+}
+
+.animObstacle{
+    animation: fly 4s linear infinite;
+    animation-delay: 11s;
+}
+.dinoAnim{
+    animation: hopsa 1.1s;
+   
+}
+
+.restart{
+    position:absolute;
+    left:30px;
+    top: 5vh;
+    border:5px solid red;
+    width:200px;
+    height:70px;
+    background-color: black;
+    color:white;
+    display:none;
+    
+}
+
+@keyframes fly{
+    0%{
+        left:1150px;
+    }
+     
+  
+    
+    100%{
+        left: -51px;
+    }
+}
+
+
+@keyframes hopsa{
+    0%{
+        top:500px;
+
+    }
+
+    5%{
+        top:500px;
+    }
+
+    50%{
+        top:320px;
+    }
+
+    75%{
+        top:320px;
+    }
+
+    90%{
+        top:450px;
+    }
+
+    100%{
+        top:500px;
+    }
+}
+
+
+.informations{
+
+    position:absolute;
+    top:20%;
+    left:50%;
+
+    width:500px;
+    height:150px;
+    color:white;
+    font-size: 50px;
+}
